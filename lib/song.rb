@@ -56,6 +56,9 @@ end
   def self.new_from_filename(name)
     music_hit = name.split(" - ") 
     music_hit
+    artist = music_hit[0]
+    # song_name = music_hit[1].split(".")[0]
+    song_name = music_hit[1].gsub(".mp3","")
   end 
 def song_save
   song.save
