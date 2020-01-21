@@ -53,7 +53,10 @@ end
     @@all
   end
 
-  
+  def self.new_from_filename(name)
+    name.split(" - ")
+    
+  end 
 def song_save
   song.save
 end
