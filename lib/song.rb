@@ -76,7 +76,9 @@ end
     full_song.artist_name = artist 
     full_song 
   end 
-    
+  def self.destroy_all
+    @@all.clear
+  end 
 def song_save
   song.save
 end
