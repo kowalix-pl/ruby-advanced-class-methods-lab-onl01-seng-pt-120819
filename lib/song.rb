@@ -64,6 +64,19 @@ end
     full_song.artist_name = artist 
     full_song
   end 
+  
+  def self.create_from_filename(name)
+    music_hit = name.split(" - ") 
+    music_hit
+    artist = music_hit[0]
+    # song_name = music_hit[1].split(".")[0]
+    song_name = music_hit[1].gsub(".mp3","")
+    full_song = Song.create
+    full_song.name = song_name
+    full_song.artist_name = artist 
+    full_song 
+  end 
+    
 def song_save
   song.save
 end
