@@ -54,8 +54,8 @@ end
   end
 
   def self.new_from_filename(name)
-    name.split(" - ")
-    
+    music_hit = name.split(" - ") 
+    music_hit
   end 
 def song_save
   song.save
