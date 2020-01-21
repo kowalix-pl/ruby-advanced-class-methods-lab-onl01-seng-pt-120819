@@ -59,6 +59,10 @@ end
     artist = music_hit[0]
     # song_name = music_hit[1].split(".")[0]
     song_name = music_hit[1].gsub(".mp3","")
+    full_song = Song.new
+    full_song.name = song_name
+    full_song.artist_name = artist 
+    full_song
   end 
 def song_save
   song.save
