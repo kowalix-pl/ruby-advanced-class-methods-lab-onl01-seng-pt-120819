@@ -20,7 +20,7 @@ class Song
    def Song.save
    
    end 
-  def self.new_by_name
+  def self.new_by_name(name)
     @@all.find{|song| song.name == name}
   end 
   
